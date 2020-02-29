@@ -389,7 +389,7 @@ header {
 
 header h1 span {
   display: block;
-  font-size: 100px;
+  font-size: 10rem;
   font-style: normal;
 }
 
@@ -397,6 +397,14 @@ header h1 span {
   font-style: italic;
   font-size: 4rem;
   float: left;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger i {
+  font-size: 4rem;
 }
 
 .hnav ul {
@@ -579,7 +587,9 @@ footer {
   padding: 15px 0px;
 }
 
-/* media queries */
+/* ****************************
+   * MEDIA QUERIES START HERE *
+   **************************** */
 
 @media (max-width: 1300px) {
   h2 {
@@ -676,7 +686,7 @@ footer {
   }
   .contactInfo {
     clear: both;
-    width: 50%;
+    width: 75%;
     margin: 75px 0 0 0;
   }
   .footerNav {
@@ -718,6 +728,26 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+  header {
+    max-height: 80vh;
+    min-height: 450px;
+  }
+  .hnav,
+  .logo,
+  .social {
+    display: none;
+  }
+  .hamburger {
+    display: initial;
+    float: right;
+  }
+  .blockTopImg,
+  .blockBtmImg {
+    height: 350px;
+  }
   .subscribe input,
   .subscribe button {
     display: block;
@@ -726,5 +756,84 @@ footer {
   .subscribe input {
     text-align: center;
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 620px) {
+  h1 {
+    font-size: 13rem;
+    line-height: 80px;
+  }
+  header h1 span {
+    font-size: 8rem;
+  }
+  .blockTopImg,
+  .blockBtmImg {
+    height: 300px;
+  }
+  .copyright p {
+    font-size: 1.4rem;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 510px) {
+  header {
+    padding: 15px;
+  }
+  h1 {
+    font-size: 12rem;
+    line-height: 80px;
+  }
+  header h1 span {
+    font-size: 7rem;
+  }
+  .blockTopImg,
+  .blockBtmImg {
+    height: 200px;
+  }
+  footer h4 {
+    margin-bottom: 15px;
+  }
+  .subscribe p,
+  .contactInfo p,
+  .footerNav a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 11.5rem;
+    line-height: 70px;
+  }
+  header h1 span {
+    font-size: 6.5rem;
+  }
+  .link h3 {
+    font-size: 2.5rem;
+  }
+  .link i {
+    font-size: 6.5rem;
+  }
+  .linkSection {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 10.5rem;
+    line-height: 65px;
+  }
+  header h1 span {
+    font-size: 5.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  .subscribe p,
+  .contactInfo p {
+    font-size: 1.4rem;
   }
 }

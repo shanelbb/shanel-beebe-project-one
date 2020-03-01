@@ -388,6 +388,7 @@ figure {
 
   color: #fcfcfc;
   background-color: rgba(24, 51, 153, 0.78);
+  border: 2px solid transparent;
 
   padding: 10px 25px;
 }
@@ -436,6 +437,11 @@ header h1 span {
   margin-left: 15px;
 }
 
+.hnav a:hover,
+.hnav a:focus {
+  color: #acacac;
+}
+
 .social {
   text-align: right;
 }
@@ -444,7 +450,18 @@ header h1 span {
   margin: 15px 0;
 }
 
+.social a:hover,
+.social a:focus {
+  color: #acacac;
+}
+
 /* main styles */
+
+main .btn:hover {
+  background-color: #fff;
+  border: 2px solid rgba(24, 51, 153, 0.78);
+  color: rgba(24, 51, 153, 0.78);
+}
 
 /* first section */
 .new {
@@ -544,6 +561,11 @@ article p {
   padding: 0 50px;
 }
 
+.link a:hover,
+.link a:focus {
+  color: #e3e3e3;
+}
+
 .link i {
   font-size: 8rem;
   padding-bottom: 20px;
@@ -590,6 +612,11 @@ footer {
   background-color: #000;
 }
 
+.subscribe button:hover,
+.subscribe button:focus {
+  color: #e3e3e3;
+}
+
 /* contact info */
 .contactInfo {
   width: 30%;
@@ -607,6 +634,11 @@ footer {
 
 .footerNav a {
   color: black;
+}
+
+.footerNav a:hover,
+.footerNav a:focus {
+  color: rgba(24, 51, 153, 0.78);
 }
 
 /* footer copyright */

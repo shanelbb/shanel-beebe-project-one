@@ -309,7 +309,11 @@ very light grey: #e3e3e3
 grey: #acacac
 */
 
-/* My Styles start here */
+/* ************************ 
+   * my styles start here *
+   ************************  */
+
+/* global styles  */
 html {
   font-size: 62.5%;
 }
@@ -339,11 +343,14 @@ h4,
 }
 
 h1 {
+  /* font styles */
+  font-style: italic;
   font-size: 15rem;
   font-weight: 500;
-  text-align: center;
   line-height: 90px;
-  font-style: italic;
+  text-align: center;
+
+  /* margin styles */
   margin-top: 150px;
   margin-bottom: 60px;
 }
@@ -363,32 +370,45 @@ p {
 
 a {
   text-decoration: none;
-  color: #fcfcfc;
   text-transform: uppercase;
+  color: #fcfcfc;
+}
+
+figure {
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .btn {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
-  text-align: center;
   line-height: 29px;
+  text-align: center;
+
   color: #fcfcfc;
   background-color: rgba(24, 51, 153, 0.78);
+
   padding: 10px 25px;
 }
 
+/* header styles */
 header {
   background-image: url(./assets/header.jpg);
   background-size: cover;
   background-position: 50%;
+
   height: 90vh;
   min-height: 600px;
+
   color: #fcfcfc;
+
   padding: 30px;
 }
 
 header h1 span {
   display: block;
+
   font-size: 10rem;
   font-style: normal;
 }
@@ -396,6 +416,7 @@ header h1 span {
 .logo {
   font-style: italic;
   font-size: 4rem;
+
   float: left;
 }
 
@@ -423,7 +444,10 @@ header h1 span {
   margin: 15px 0;
 }
 
-.news {
+/* main styles */
+
+/* first section */
+.new {
   text-align: center;
   margin: 75px 0;
 }
@@ -438,6 +462,7 @@ header h1 span {
   margin-right: 0px;
 }
 
+/* second section */
 .fig1 {
   float: left;
   width: 40%;
@@ -454,52 +479,54 @@ article p {
   margin: 30px 0;
 }
 
-.blockTopText {
-  width: 50%;
-  float: left;
-  padding: 50px 50px 0 0;
-  height: 550px;
-}
+/* third section */
 
-figure {
-  margin: 0;
-  max-width: 100%;
-  max-height: 100%;
+.blockTopText {
+  float: left;
+  width: 50%;
+  height: 550px;
+  padding: 50px 50px 0 0;
 }
 
 .blockTopImg {
+  float: right;
+
   width: 50%;
   height: 550px;
-  float: right;
+
   background-image: url(./assets/image-5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 }
 
-.blockBtmImg {
+.blockBtmText {
+  float: left;
   width: 50%;
   height: 550px;
+  padding: 50px 0 0 50px;
+}
+
+.blockBtmImg {
   float: left;
+
+  width: 50%;
+  height: 550px;
+
   background-image: url(./assets/image-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 25%;
 }
 
-.blockBtmText {
-  float: left;
-  width: 50%;
-  padding: 50px 0 0 50px;
-  height: 550px;
-}
-
+/* fourth section */
 .linkSection {
+  width: 100%;
+  padding: 100px;
+
   background-image: url(./assets/footer.jpg);
   background-size: cover;
   background-position: 50%;
-  padding: 100px;
-  width: 100%;
 }
 
 .linkSection nav {
@@ -522,6 +549,7 @@ figure {
   padding-bottom: 20px;
 }
 
+/* footer section */
 footer {
   background-color: #e3e3e3;
 }
@@ -535,6 +563,7 @@ footer {
   float: left;
 }
 
+/* subscription form */
 .subscribe {
   width: 50%;
 }
@@ -561,10 +590,12 @@ footer {
   background-color: #000;
 }
 
+/* contact info */
 .contactInfo {
   width: 30%;
 }
 
+/* footer navigation menu */
 .footerNav {
   float: right;
   text-align: right;
@@ -578,6 +609,7 @@ footer {
   color: black;
 }
 
+/* footer copyright */
 .copyright {
   background-color: #acacac;
 }
@@ -602,6 +634,7 @@ footer {
     padding: 0 30px;
   }
 }
+
 @media (max-width: 1150px) {
   .fig1 {
     margin: 75px 0 50px 0;
@@ -614,11 +647,9 @@ footer {
     float: none;
     width: 100%;
   }
-
   .link h3 {
     font-size: 3rem;
   }
-
   .link i {
     font-size: 7rem;
   }
@@ -670,8 +701,8 @@ footer {
   .blockTopText,
   .blockBtmText {
     text-align: center;
-    padding: 50px 0 75px 0;
     height: 100%;
+    padding: 50px 0 75px 0;
   }
   .blockTopImg,
   .blockBtmImg {
@@ -681,8 +712,8 @@ footer {
     font-size: 2.5rem;
   }
   .subscribe {
-    width: 100%;
     text-align: center;
+    width: 100%;
   }
   .contactInfo {
     clear: both;
@@ -721,7 +752,6 @@ footer {
   .link h3 {
     font-size: 3.5rem;
   }
-
   .link i {
     font-size: 8rem;
   }

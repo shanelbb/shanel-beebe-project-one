@@ -17,13 +17,19 @@
     <title>Project 1</title>
   </head>
   <body>
+    <!-- header styles start here -->
     <header>
+      <!-- header wrapper starts here -->
       <div class="wrapper">
         <div class="clearfix">
           <p class="logo">ONE</p>
 
-          <a href="#" class="hamburger"><i class="fas fa-bars"></i></a>
+          <!-- hamburger menu icon hidden until screensize <768px  -->
+          <a href="#" class="hamburger"
+            ><i class="fas fa-bars" aria-label="menu icon"></i
+          ></a>
 
+          <!-- header navigation menu hidden at screensize <768px -->
           <nav class="hnav clearfix">
             <ul>
               <li><a href="#">Home</a></li>
@@ -36,6 +42,9 @@
 
         <h1>One<span>Magazine</span></h1>
       </div>
+      <!-- header wrapper ends here -->
+
+      <!-- social media links menu -->
       <nav class="social">
         <ul>
           <li>
@@ -61,11 +70,13 @@
         </ul>
       </nav>
     </header>
+    <!--  header styles end here -->
 
+    <!-- main styles start here -->
     <main>
-      <!-- News Articles Section Starts -->
+      <!-- wrapper and New Articles section starts -->
       <section class="wrapper clearfix">
-        <h2 class="news">New Articles</h2>
+        <h2 class="new">New Articles</h2>
         <ul class="gallery">
           <li>
             <img
@@ -76,6 +87,7 @@
           <li class="gal2">
             <img src="./assets/image-3.jpg" alt="Head shot of a male model" />
           </li>
+          <!-- third image hidden after screensizes < 980px -->
           <li class="gal3">
             <img
               src="./assets/image-4.jpg"
@@ -84,9 +96,9 @@
           </li>
         </ul>
       </section>
-      <!-- News Articles section ends-->
+      <!--wrapper and News Articles section ends-->
 
-      <!-- This Weeks Highlight section starts-->
+      <!-- wrapper and This Weeks Highlight section starts-->
       <section class="wrapper clearfix section2">
         <figure class="fig1">
           <img
@@ -110,12 +122,18 @@
           <a class="btn" href="#">Read More</a>
         </article>
       </section>
-      <!-- This Weeks Highlight section ends-->
+      <!-- wrapper and This Weeks Highlight section ends-->
+
+      <!-- secondary articles section starts here -->
       <section class="clearfix block">
+        <!-- top set of article and image -->
         <div class="top clearfix">
+          <!-- figure not inside wrapper -->
           <figure class="blockTopImg">
             <!-- <img src="./assets/image-5.jpg" alt="Headshot of a female model" /> -->
           </figure>
+
+          <!-- wrapper for top article starts here -->
           <div class="wrapper">
             <article class="blockTopText">
               <h2>New Trends to Lookout For</h2>
@@ -129,14 +147,20 @@
               <a class="btn" href="#">Read More</a>
             </article>
           </div>
+          <!-- wrapper for top article ends here -->
         </div>
+
+        <!-- bottom set of article and image -->
         <div class="bottom clearfix">
+          <!-- figure not inside wrapper -->
           <figure class="blockBtmImg">
             <!-- <img
               src="./assets/image-2.jpg"
               alt="Headshot of two male models wearing glasses"
             /> -->
           </figure>
+
+          <!-- wrapper for bottom article starts here -->
           <div class="wrapper">
             <article class="blockBtmText">
               <h2>
@@ -151,9 +175,14 @@
               <a class="btn" href="#">Read More</a>
             </article>
           </div>
+          <!-- wrapper for bottom article ends here -->
         </div>
       </section>
+      <!-- secondary articles section ends here -->
+
+      <!-- links section starts here  -->
       <section class="linkSection">
+        <!-- wrapper starts here -->
         <nav class="wrapper clearfix">
           <ul class="links">
             <li class="link">
@@ -176,10 +205,17 @@
             </li>
           </ul>
         </nav>
+        <!-- wrapper ends here -->
       </section>
+      <!-- links section ends here -->
     </main>
+    <!-- main section ends here -->
+
+    <!-- footer starts here -->
     <footer>
+      <!-- wrapper starts here -->
       <section class="wrapper contact clearfix">
+        <!-- subscription form starts here -->
         <div class="subscribe">
           <h4>Stay Updated</h4>
           <p>Subscribe to our newsletter to stay updated.</p>
@@ -193,6 +229,9 @@
             <button class="btn">Subscribe</button>
           </form>
         </div>
+        <!-- subscription form ends here -->
+
+        <!-- contact info starts here -->
         <div class="contactInfo">
           <h4>Contact</h4>
           <p>
@@ -201,6 +240,9 @@
             A5A 5A5, Canada
           </p>
         </div>
+        <!-- contact info ends here -->
+
+        <!-- footer navigation starts here -->
         <nav class="footerNav">
           <ul>
             <li><a href="#">Home</a></li>
@@ -209,10 +251,14 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <!-- footer navigation ends here -->
       </section>
+      <!-- wrapper ends here -->
+
       <section class="copyright">
         <p>Copyright &#169; 2019 HackerYou</p>
       </section>
     </footer>
+    <!-- footer ends here -->
   </body>
 </html>
